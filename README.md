@@ -1,4 +1,4 @@
-
+![banner](https://github.com/darneees/Order-Summary-Component/assets/79709843/deeacac5-caa5-466c-9072-c596f6438412)
 
 <h1>
   Order Summary Component :oncoming_automobile:
