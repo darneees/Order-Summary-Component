@@ -1,7 +1,7 @@
 
 
 <h1>
-  Order Summary Component :file_folder:
+  Order Summary Component :oncoming_automobile:
 </h1>
 
 ## ✔️ Tecnologias utilizadas:
