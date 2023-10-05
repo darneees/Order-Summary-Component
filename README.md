@@ -20,7 +20,7 @@ https://fonts.google.com/specimen/Red+Hat+Display?query=red
 
 ## :desktop_computer: Deployed
 
-...
+https://darneees.github.io/Order-Summary-Component/
 
 <p align="center">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
