@@ -7,11 +7,15 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
+body {
+    overflow: hidden;
+}
+
 main {
     @include flexCenter(center, center, column);
     height: 100vh; position: relative;
     background-color: $tertiaryColor;
-    overflow: hidden; z-index: 1;
+    z-index: 1;
 
     .attribution {
         position: absolute;
@@ -133,5 +137,9 @@ main {
 @media ( max-width: 390px ) {
     main .attribution {
         bottom: 5px;
+    }
+
+    .cardSummary {
+        width: 325px;
     }
 }
