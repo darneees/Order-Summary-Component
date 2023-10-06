@@ -6,10 +6,6 @@
   font-family: "Red Hat Display", sans-serif;
 }
 
-body {
-  overflow: hidden;
-}
-
 main {
   display: flex;
   justify-content: center;
