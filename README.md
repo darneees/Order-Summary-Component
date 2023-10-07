@@ -11,16 +11,6 @@
 
 ![modal](https://github.com/darneees/Order-Summary-Component/assets/79709843/f2f9e16c-7474-4067-bad3-99832e873720)
 
-
-<p align="center">
-    Video
-</p>
-
-
-https://github.com/darneees/Order-Summary-Component/assets/79709843/286f81e5-40d3-4500-a420-5dc18674e529
-
-
-
 <h1>
   Order Summary Component :oncoming_automobile:
 </h1>
