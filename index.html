@@ -2,51 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Component</title>
     <!-- import css -->
     <link rel="stylesheet" href="resource/scss/style.css">
     <!-- import favicon -->
     <link rel="shortcut icon" href="resource/img/favicon/favicon-32x32.png" type="image/x-icon">
-    <title>Order Component</title>
+    <!-- import icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-
     <main>
-        <div class="cardSummary">
-            <div class="cardImage">
-                <img src="resource/img/trip.jpg" alt="">
-            </div>
+        <section class="card__content">
+            <figure class="card__image">
+                <img src="resource/img/trip.jpg" alt="Road Trip Image" id="my__img">
+                <span class="material-symbols-outlined" title="Full Screen Image">
+                    fullscreen
+                </span>
+            </figure>
 
-            <div class="cardContent">
-                <div class="content">
+            <figure id="card__modal" class="modal_container">
+                <span class="modal__close">&times;</span>
+                <img class="modal__content" alt="Road Trip MOdal Image" id="img__01">
+            </figure>
+
+            <article class="card__container">
+                <header class="card__header">
                     <h2>Road Trip</h2>
                     <p>Embark on the ultimate adventure! Reserve your road trip now and explore the open road. 🚗✨</p>
-                </div>
-
-                <div class="value">
-                    <div class="one">
+                </header>
+                
+                <section class="pricing__content">
+                    <div class="pricing__value">
                         <h3>One Stop</h3>
                         <p>$59.99</p>
                     </div>
 
-                    <div class="two">
-                        <a href="">change</a>
+                    <div class="pricing__group">
+                        <p>Change</p>
                     </div>
-                </div>
+                </section>
 
-                <button>
-                    <p>Proceed to Payment</p>
+                <button class="card__button">
+                    <span class="btn-text">Proceed to Payment</span>
                 </button>
-                <p class="cancelOder">Cancel Order</p>
-            </div>
-        </div>
+                <p class="card__cancel">
+                    Cancel Order
+                </p>
+            </article>
+        </section>
 
-        <p class="attribution">
-            <span>© <a href="https://github.com/darneees" target="_blank">Douglas Sá</a>. All rigths reserved.</span>
+        <p class="content__creator">
+            <a href="https://github.com/darneees" target="_blank">© Douglas Sá</a>.<span> All rights reserved.</span>
         </p>
 
-        <img src="resource/img/background_wave.svg" alt="wave desktop background" class="waveDesktop">
+        <img src="resource/img/background_wave.svg" alt="Wave Desktop Background" class="wave__desktop">
     </main>
-    
+
+    <script src="resource/js/script.js"></script>
 </body>
 </html>
