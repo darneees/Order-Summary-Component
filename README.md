@@ -1,5 +1,5 @@
 <p align="center">
-    Imagem
+    Card
 </p>
 
 ![banner](https://github.com/darneees/Order-Summary-Component/assets/79709843/8e2d4ebd-4805-46cd-b149-800690ceb342)
