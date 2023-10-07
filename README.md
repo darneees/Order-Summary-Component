@@ -2,14 +2,14 @@
     Card
 </p>
 
+![banner](https://github.com/darneees/Order-Summary-Component/assets/79709843/91c443e5-fbd3-42ad-9fd4-b4282ba906fd)
 
-![banner](https://github.com/darneees/Order-Summary-Component/assets/79709843/a1ddcbd2-c1a0-4b3d-8a09-0bd529d2dc3f)
 
 <p align="center">
     Modal Ativo
 </p>
 
-![modal](https://github.com/darneees/Order-Summary-Component/assets/79709843/d3c6fa2e-5396-49a7-834c-db5a9ba082cf)
+![modal](https://github.com/darneees/Order-Summary-Component/assets/79709843/f2f9e16c-7474-4067-bad3-99832e873720)
 
 
 <p align="center">
@@ -17,9 +17,7 @@
 </p>
 
 
-
-
-https://github.com/darneees/Order-Summary-Component/assets/79709843/238bd94c-ee1a-426c-b02e-f5d62db834aa
+https://github.com/darneees/Order-Summary-Component/assets/79709843/286f81e5-40d3-4500-a420-5dc18674e529
 
 
 
