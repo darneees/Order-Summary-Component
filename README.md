@@ -2,20 +2,26 @@
     Card
 </p>
 
-![banner](https://github.com/darneees/Order-Summary-Component/assets/79709843/8e2d4ebd-4805-46cd-b149-800690ceb342)
+
+![banner](https://github.com/darneees/Order-Summary-Component/assets/79709843/a1ddcbd2-c1a0-4b3d-8a09-0bd529d2dc3f)
 
 <p align="center">
     Modal Ativo
 </p>
 
-![modal](https://github.com/darneees/Order-Summary-Component/assets/79709843/46d7179e-4ff8-4fc1-8eae-c4bcc27f9e4a)
+![modal](https://github.com/darneees/Order-Summary-Component/assets/79709843/d3c6fa2e-5396-49a7-834c-db5a9ba082cf)
 
 
 <p align="center">
     Video
 </p>
 
-https://github.com/darneees/Order-Summary-Component/assets/79709843/a69fdb98-4eb7-4e13-8da9-fe15860573d4
+
+
+
+https://github.com/darneees/Order-Summary-Component/assets/79709843/238bd94c-ee1a-426c-b02e-f5d62db834aa
+
+
 
 <h1>
   Order Summary Component :oncoming_automobile:
