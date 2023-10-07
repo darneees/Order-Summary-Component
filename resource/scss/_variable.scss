@@ -1,0 +1,23 @@
+// Colors  -----------------------------------
+
+$PrimaryColor: hsl(245, 75%, 52%);
+$SecondaryColor: hsl(224, 23%, 55%);
+$tertiaryColor: hsl(225, 100%, 98%);
+$quaternaryColor: hsl(63, 73%, 10%);
+$boxShadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+$modalBackground: rgba(0,0,0,0.9);
+
+// Functions  -----------------------------------
+
+@mixin flexCenter($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin reset-style(){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

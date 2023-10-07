@@ -1,0 +1,322 @@
+@import 'variable';
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    @include reset-style();
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    overflow: hidden;
+}
+
+main {
+    @include flexCenter(center, center, column);
+    height: 100vh;
+    position: relative;
+    background-color: $tertiaryColor;
+    z-index: 1;
+
+    .content__creator {
+        position: absolute;
+        bottom: 30px; z-index: 3;
+        color: $quaternaryColor;
+        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+        a {
+            text-decoration: none;
+            color: $PrimaryColor;
+        }
+    }
+
+    .wave__desktop {
+        position: absolute;
+        z-index: 2; top: 0;
+        opacity: 0.10;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.card__content {
+    width: 350px;
+    height: 600px;
+    border-radius: 40px;
+    z-index: 4;
+    box-shadow: $boxShadow;
+
+    .card__image {
+        height: 35%; width: 100%;
+        overflow: hidden;  position: relative;
+        border-radius: 40px 40px 0 0;
+
+        #my__img {
+            transition: .3s;
+            cursor: pointer;
+            width: 100%; height: 100%;
+        }
+
+        span {
+            color: $tertiaryColor;
+            position: absolute; padding: 10px;
+            top: 15px; right: 20px;
+            border: 2px solid $tertiaryColor;
+            border-radius: 50px;
+            cursor: pointer;
+            opacity: 0.3;
+        }
+    }
+
+    .modal_container {
+        display: none;
+        position: fixed; z-index: 5;
+        padding-top: 200px; left: 0; top: 0;
+        width: 100%; height: 100%;
+        overflow: auto; background-color: $modalBackground;
+
+        .modal__content {
+            margin: auto; display: block;
+            width: 700px; animation-name: zoom;
+            border-radius: 40px; border: 10px solid $tertiaryColor;
+            animation-duration: 1s;
+        }
+
+        .modal__close {
+            position: absolute; top: 50px; right: 100px;
+            color: $tertiaryColor; transition: 0.3s;
+            font-size: 60px; font-weight: bold;
+
+            &:hover, &:focus {
+                color: $SecondaryColor;
+                text-decoration: none; cursor: pointer;
+            }
+        }
+    }
+
+    .card__container {
+        @include flexCenter(center, center, column);
+        background-color: $tertiaryColor;
+        height: 65%;
+        gap: 1.3rem;
+        border-radius: 0 0 40px 40px;
+
+        .card__header {
+            text-align: center;
+            animation: slide-in-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+            h2 {
+                color: $quaternaryColor;
+                font-size: 2rem;
+                font-weight: 900;
+            }
+
+            p {
+                color: $SecondaryColor;
+                font-size: 1.2rem;
+                font-weight: 500;
+                padding: 0 1.4rem 0 1.4rem;
+            }
+        }
+
+        .pricing__content {
+            @include flexCenter(space-between, center, row);
+            width: 85%; height: 70px;
+            padding: 0 1.3rem 0 1.3rem;
+            border: 3px solid $quaternaryColor;
+            border-radius: 15px;
+            animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            
+
+            .pricing__value {
+                h3 {
+                    color: $quaternaryColor;
+                    font-weight: 700;
+                }
+
+                p {
+                    color: $SecondaryColor;
+                    font-weight: 500;
+                }
+            }
+
+            .pricing__group {
+                border-left: 3px solid $quaternaryColor;
+
+                p {
+                    padding: 0 0 0 1rem;
+                    color: $PrimaryColor;
+                    cursor: pointer; opacity: 0.5;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .card__button {
+            background-color: $quaternaryColor;
+            outline: none; border: none;
+            width: 85%; height: 70px;
+            border-radius: 15px;
+            cursor: pointer; user-select: none;
+            animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            
+            .btn-text {
+                width: 100%;
+                color: $tertiaryColor;
+                font-size: 1rem;
+                font-weight: 700;
+            }
+            
+            &:hover {
+                background-color: $PrimaryColor;
+                transition: .4s ease-in-out;
+            }
+        }
+        
+        .card__cancel {
+            color: $SecondaryColor;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin: 0 0 1rem 0;
+            animation: slide-in-bottom 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+            &:hover {
+                color: $quaternaryColor;
+            }
+        }
+    }
+}
+
+// animation
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+// responsive style
+
+@media (min-width: 1000px) {
+
+    .card__content .modal_container {
+
+        .modal__content {
+            border: 5px solid $tertiaryColor;
+            width: 800px;
+        }
+
+        .modal__close {
+            top: 50px; right: 50px;
+        }
+    } 
+}
+
+@media (min-width: 601px) and (max-width: 999px) {
+
+    .card__content .modal_container {
+
+        .modal__content {
+            border: 5px solid $tertiaryColor;
+            width: 550px;
+        }
+
+        .modal__close {
+            top: 50px; right: 50px;
+        }
+    } 
+}
+
+
+@media (min-width: 400px) and (max-width: 600px) {
+
+    .card__content .modal_container {
+
+        .modal__content {
+            border: 5px solid $tertiaryColor;
+            width: 400px;
+            border-radius: 25px;
+        }
+
+        .modal__close {
+            top: 50px; right: 50px;
+        }
+    } 
+}
+
+@media (max-width: 399px) {
+    main .content__creator {
+        bottom: 5px;
+    }
+
+    .card__content .modal_container {
+
+        .modal__content {
+            border: 5px solid $tertiaryColor;
+            width: 320px;
+            border-radius: 20px;
+        }
+
+        .modal__close {
+            top: 50px; right: 50px;
+        }
+    } 
+}
