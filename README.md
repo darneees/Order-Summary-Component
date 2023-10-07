@@ -1,5 +1,14 @@
+<p align="center">
+    Imagem
+</p>
 
 ![banner](https://github.com/darneees/Order-Summary-Component/assets/79709843/8e2d4ebd-4805-46cd-b149-800690ceb342)
+
+<p align="center">
+    Video
+</p>
+
+https://github.com/darneees/Order-Summary-Component/assets/79709843/a69fdb98-4eb7-4e13-8da9-fe15860573d4
 
 <h1>
   Order Summary Component :oncoming_automobile:
