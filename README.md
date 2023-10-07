@@ -5,6 +5,13 @@
 ![banner](https://github.com/darneees/Order-Summary-Component/assets/79709843/8e2d4ebd-4805-46cd-b149-800690ceb342)
 
 <p align="center">
+    Modal Ativo
+</p>
+
+![modal](https://github.com/darneees/Order-Summary-Component/assets/79709843/46d7179e-4ff8-4fc1-8eae-c4bcc27f9e4a)
+
+
+<p align="center">
     Video
 </p>
 
